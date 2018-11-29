@@ -51,8 +51,7 @@ jobs:
       addons:
         apt:
           packages:
-            - oracle-java8-installer
-            - oracle-java8-set-default
+            - openjdk-8-jre-headless
       env: DB=mysqli MOODLE_BRANCH=MOODLE_35_STABLE
       install:
       - moodle-plugin-ci install --no-init
